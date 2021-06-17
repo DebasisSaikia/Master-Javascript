@@ -44,3 +44,9 @@ let laptop = {
 };
 
 person.hello();
+
+// ==================making object using new method======
+var car = new Object();
+car.brand = "Jeep";
+
+console.log(car.brand);
