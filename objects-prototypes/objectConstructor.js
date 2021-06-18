@@ -16,3 +16,17 @@ details.name = function () {
 };
 
 console.log(details.salary);
+
+// Nested objects
+const person = {
+  id: Math.random(),
+  info: {
+    name: "Debasis",
+    age: 24,
+    address: {
+      home: "Assam",
+      city: "Golaghat",
+    },
+  },
+};
+console.log(person.info.address.city);
