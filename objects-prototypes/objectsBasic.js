@@ -50,3 +50,22 @@ var car = new Object();
 car.brand = "Jeep";
 
 console.log(car.brand);
+
+// getter and setter method==============================
+const obj = {
+  name: "Debasis",
+  home: "Assam",
+  age: 24,
+  // getter method
+  // get getname() {
+  //   return this.name.toUpperCase();
+  // },
+
+  // setter method
+  set setname(n) {
+    this.name = n.toUpperCase();
+  },
+};
+obj.setname = "saikia";
+
+console.log(obj);
