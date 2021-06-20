@@ -7,23 +7,31 @@ function register() {
   });
 }
 
-function login(callback) {
-  setTimeout(() => {
-    console.log("login");
-    callback();
-  }, 2000);
+function login() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("login");
+      resolve();
+    }, 2000);
+  });
 }
 
 function emailV() {
-  setTimeout(() => {
-    console.log("Email Verified");
-  }, 2000);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Email Verified");
+      resolve();
+    }, 2000);
+  });
 }
 
 function getData() {
-  setTimeout(() => {
-    console.log("Other Data recieved");
-  }, 1000);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Other Data recieved");
+      resolve();
+    }, 1000);
+  });
 }
 
 // callback hell
@@ -35,6 +43,22 @@ function getData() {
 //   });
 // });
 
-register().then(emailV).then(getData);
+// register().then(emailV).then(getData); promise based
+
+// async await
+async function verified() {
+  try {
+    await register();
+    await login();
+    await emailV();
+    await getData();
+  } catch (err) {
+    console.error(err.message);
+    throw new Error();
+  }
+}
+verified().then(() => {
+  console.log("All set");
+});
 
 console.log("run first");
