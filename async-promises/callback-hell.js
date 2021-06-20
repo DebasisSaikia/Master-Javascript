@@ -1,13 +1,13 @@
-function login(callback) {
+function register(callback) {
   setTimeout(() => {
-    console.log("login");
+    console.log("register");
     callback();
   }, 3000);
 }
 
-function register(callback) {
+function login(callback) {
   setTimeout(() => {
-    console.log("register");
+    console.log("login");
     callback();
   }, 2000);
 }
