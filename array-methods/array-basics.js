@@ -31,8 +31,16 @@ const actors = [
     }
 ]
 
-for (let i = 0; i < actors.length; i++) {
-    actors[i].pay = actors[i].pay - 10
+// for (let i = 0; i < actors.length; i++) {
+//     actors[i].pay = actors[i].pay - 10
+// }
+
+actors.forEach(actor => {
+    actor.pay = actor.pay - 10;
+});
+
+for (const actor of actors) {
+    actor.pay = actor.pay - 10;
 }
 
 console.log(actors)
