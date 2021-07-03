@@ -95,5 +95,19 @@ const mapUser = users.map((user) => {
         fullName: `${user.fname} ${user.lname}`
     }
 })
-console.log(mapUser)
+// console.log(mapUser)
 
+// ==============reduce method-Reduces array to single value from left to right
+
+// indexOf method-This method returns the index of the first occurrence of the specified element in the array, or -1 if it is not found.
+const admins = [2, 1, 5];
+const user = { name: 'deba', id: 5 }
+const isAdmin = admins.indexOf(user.id) > -1;
+// console.log(isAdmin)
+// includes method -This method checks if an array includes the element that passes the condition, returning true or false as appropriate.
+// console.log(admins.includes(user.id))
+
+// find method -This method returns the value of the first element in an array that pass the test in a testing function.
+const num = [1, 2, 3, 4, 5, 6];
+const found = num.find(number => number > 4)
+console.log(found)
