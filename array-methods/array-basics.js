@@ -111,3 +111,8 @@ const isAdmin = admins.indexOf(user.id) > -1;
 const num = [1, 2, 3, 4, 5, 6];
 const found = num.find(number => number > 4)
 console.log(found)
+
+// splice method-
+const names = ['deba', 'ilish', 'tilo', 'biki'];
+names.splice(1, 2);
+console.log(names)
