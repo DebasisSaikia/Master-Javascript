@@ -116,3 +116,4 @@ console.log(found)
 const names = ['deba', 'ilish', 'tilo', 'biki'];
 names.splice(1, 2);
 console.log(names)
+const salad = new Array('🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑');
