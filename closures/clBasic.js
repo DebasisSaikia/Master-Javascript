@@ -58,3 +58,25 @@ scope. this is how beautiful javascript function .thats why we call javascript f
 const output = parent()
 console.log(output)
 output()
+
+// closure and setTimeout()
+
+function x() {
+    // putting let instead of var is the simplest solution here but we will use closure to tackle this behaviour
+    // for (let i = 1; i <= 5; i++) {
+    //     setTimeout(() => {
+    //         console.log(i)
+    //     }, i * 2000)
+    // }
+
+    for (var i = 1; i <= 5; i++) {
+        const close = (x) => {
+            setTimeout(() => {
+                console.log(x)
+            }, x * 2000)
+        }
+        close(i)
+    }
+    console.log('I will run')
+}
+x()
