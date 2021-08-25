@@ -9,3 +9,8 @@ let arr = [arr1, arr2];
 // splice to add and element o specific index
 arr.splice(1, 0, ['biki'])
 console.log(arr)
+
+// join method
+const fruit=['apple','guava','banana','grapes'];
+const res=fruit.join('-')
+console.log(res)

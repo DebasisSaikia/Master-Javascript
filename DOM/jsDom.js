@@ -45,8 +45,20 @@ query.classList.add('title')
 
 
 // create element
-const heading = document.createElement('h4')
+/**
+ * const heading = document.createElement('h4')
 heading.innerHTML = 'This is such an amazing thing';
 
 const parent = document.querySelector('.parent');
 parent.appendChild(heading)
+ */
+
+/**===============================DOM EVENTS========================== */
+const btn = document.querySelector('.btn');
+const parent = document.querySelector('.children');
+btn.addEventListener('click', (e) => {
+
+    console.log(e)
+    alert('Button Click')
+    parent.style.fontSize = "3rem"
+})
