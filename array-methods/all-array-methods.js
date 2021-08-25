@@ -14,3 +14,7 @@ console.log(arr)
 const fruit=['apple','guava','banana','grapes'];
 const res=fruit.join('-')
 console.log(res)
+
+// splice method
+const sp=fruit.splice(2,'pineapple')
+console.log(sp)
