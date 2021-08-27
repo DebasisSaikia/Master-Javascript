@@ -54,11 +54,11 @@ parent.appendChild(heading)
  */
 
 /**===============================DOM EVENTS========================== */
-const btn = document.querySelector('.btn');
-const parent = document.querySelector('.children');
-btn.addEventListener('click', (e) => {
+// const btn = document.querySelector('.btn');
+// const parent = document.querySelector('.children');
+// btn.addEventListener('click', (e) => {
 
-    console.log(e)
-    alert('Button Click')
-    parent.style.fontSize = "3rem"
-})
+//     console.log(e)
+//     alert('Button Click')
+//     parent.style.fontSize = "3rem"
+// })
