@@ -18,3 +18,8 @@ console.log(res)
 // splice method
 const sp=fruit.splice(2,'pineapple')
 console.log(sp)
+
+// map
+const numbers=[5,1,3,2,6];
+const output=numbers.map((x)=>x.toExponential(2));
+console.log(output);
