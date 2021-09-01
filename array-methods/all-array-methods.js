@@ -30,3 +30,28 @@ const fil = [5, 1, 3, 2, 6,7,4,9];
 const filData = fil.filter((odd) => odd % 2);
 const evenData=fil.filter((even)=>even%2==0)
 console.log(evenData)
+
+const charac=['deba','ilish','biki','deba','biki'];
+const out=charac.filter((ch)=>ch!=='biki');
+console.log(out)
+
+
+// reduce array
+// function numSum(fil){
+//     let sum=0;
+//     for(let i=0;i<fil.length;i++){
+//         sum=sum+fil[i];
+//     }
+//     return sum;
+// }
+// console.log(numSum(fil));
+
+const redu=fil.reduce((acc,curr)=>{
+    acc=acc+curr;
+    return acc;
+},0);
+
+console.log(redu)
+
+
+
