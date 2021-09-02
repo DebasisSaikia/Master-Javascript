@@ -25,16 +25,15 @@ const output = numbers.map((x) => x.toString(2));
 // console.log(output);
 
 // filter array
-const fil = [5, 1, 3, 2, 6,7,4,9];
+const fil = [5, 1, 3, 2, 6, 7, 4, 9];
 
 const filData = fil.filter((odd) => odd % 2);
-const evenData=fil.filter((even)=>even%2==0)
-console.log(evenData)
+const evenData = fil.filter((even) => even % 2 == 0);
+console.log(evenData);
 
-const charac=['deba','ilish','biki','deba','biki'];
-const out=charac.filter((ch)=>ch!=='biki');
-console.log(out)
-
+const charac = ["deba", "ilish", "biki", "deba", "biki"];
+const out = charac.filter((ch) => ch !== "biki");
+console.log(out);
 
 // reduce array
 // function numSum(fil){
@@ -46,12 +45,12 @@ console.log(out)
 // }
 // console.log(numSum(fil));
 
-const redu=fil.reduce((acc,curr)=>{
-    acc=acc+curr;
-    return acc;
-},0);
+const redu = fil.reduce((acc, curr) => {
+  acc = acc + curr;
+  return acc;
+}, 0);
 
-console.log(redu)
+console.log(redu);
 
-
-
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
