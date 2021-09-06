@@ -52,9 +52,13 @@ const redu = fil.reduce((acc, curr) => {
 
 console.log(redu);
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.splice(2, 0, "Lemon", "Kiwi");
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2, 0, "Lemon", "Kiwi");
 
 const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(1);
 console.log(citrus);
+
+const contain = ["debasis", 1, "saikia"];
+const inc = contain.includes(1);
+console.log(inc);
