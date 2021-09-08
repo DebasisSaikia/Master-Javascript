@@ -62,3 +62,6 @@ console.log(citrus);
 const contain = ["debasis", 1, "saikia"];
 const inc = contain.includes(1);
 console.log(inc);
+
+let ress = fruits.slice(2);
+console.log(ress)
