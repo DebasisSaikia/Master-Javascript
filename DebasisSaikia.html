@@ -7,18 +7,69 @@
     <title>Assignment</title>
     <head>
         <style>
+            /* css reset */
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
             .main_container{
                 width: 100%;
                 height: 100vh;
                 display: flex;
                 justify-content: center;
             }
+            .animation_container{
+                width: 270px;
+                height: 270px;
+                background-color: red;
+                margin-top: 3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            } 
+            .first_content{
+                display: flex;
+                justify-content: space-between;
+            }
+            .second_content{
+                display: flex;
+                justify-content: space-between;
+            }
+            .circle{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+            .content_one{
+                background-color: #105f31;
+            }
+            .content_two{
+                background-color: #e74c3c;
+            }
+            .content_three{
+                background-color: #3498db;
+                width: 200px;
+            }
+            .content_four{
+                background-color: #f1c40f;
+                height: 200px
+            }
         </style>
     </head>
 </head>
 <body>
   <div class="main_container">
-        <h1>Box</h1>
+        <div class="animation_container">
+                <div class="first_content">
+                    <div class="circle content_one"></div>
+                    <div class="circle content_two"></div>
+                </div>
+                <div class="second_content">
+                    <div class="circle content_three"></div>
+                    <div class="circle content_four"></div>
+                </div>
+        </div>
   </div>
 </body>
 </html>
