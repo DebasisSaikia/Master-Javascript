@@ -64,16 +64,23 @@ const inc = contain.includes(1);
 console.log(inc);
 
 let ress = fruits.slice(2);
-console.log(ress)
+console.log(ress);
 
-function _(funck,items){
-  let i =0;
-  for(let item of items){
-    if(funck(item)){
-      items[i]=item
-      i+=1
+function _(funck, items) {
+  let i = 0;
+  for (let item of items) {
+    if (funck(item)) {
+      items[i] = item;
+      i += 1;
     }
   }
-  items.splice(i)
+  items.splice(i);
 }
 
+const cars = ["compass", "wrangler", "thar", "g-wagon"];
+
+function carFunc(data) {
+  return data.map((car) => console.log(car));
+}
+
+carFunc(cars);
