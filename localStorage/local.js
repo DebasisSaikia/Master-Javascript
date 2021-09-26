@@ -21,7 +21,7 @@ function setLocal() {
 
 function getLocal() {
   const item = JSON.parse(localStorage.getItem("theme"));
-  console.log(item?.name || "no set");
+  console.log(item?.name || "not set");
 }
 
 // local storage
@@ -29,7 +29,7 @@ const themeSwitcher = document.querySelector("#themeSwith");
 
 themeSwitcher.addEventListener("change", (e) => {
   const values = e.target.value;
-  localStorage.setItem("themes", values);
+  localStorage.setItem("themes", values );
   if (values === "dark") {
     document.body.style.backgroundColor = "#111";
     document.body.style.color = "#fff";
