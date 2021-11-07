@@ -84,3 +84,11 @@ function carFunc(data) {
 }
 
 carFunc(cars);
+
+const rp_arr=[1,1,4,3,1,3,3,2,4,3];
+// const newArr=[...new Set(rp_arr)]
+rp_arr.map(i => !!~i.indexOf('1'))
+.filter(i => i)
+.length;
+console.log(rp_arr)
+                
