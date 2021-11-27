@@ -23,12 +23,12 @@ console.log(b);
 const slc = [1, 2, 3, 4, 5];
 const res = slc.slice();
 const spr = [...slc, 5, 5, 5];
-console.log(spr);
+// console.log(spr);
 
 // ==================================================CHECK if an array
 const check = [1, 2, 3, 4, 5];
 const ch = Array.isArray(check);
-console.log(ch);
+// console.log(ch);
 // method 2
 function isarr(object) {
   if (typeof object === "string") {
@@ -37,18 +37,30 @@ function isarr(object) {
     console.log("its not array");
   }
 }
-var ary=[1,2,3]
-isarr(ary)
+var ary = [1, 2, 3];
+// isarr(ary);
 
 // =================check the index and value
-const cc=['1','2','4','5','7'];
-console.log(cc.indexOf('4'))
+const cc = ["1", "2", "4", "5", "7"];
+// console.log(cc.indexOf("4"));
 
-function checkIn(item){
-    if(cc.indexOf(item)===-1){
-        console.log('not found')
-    }else{
-        console.log('we found it')
-    }
+function checkIn(item) {
+  if (cc.indexOf(item) === -1) {
+    // console.log("not found");
+  } else {
+    // console.log("we found it");
+  }
 }
-checkIn('7');
+checkIn("7");
+
+cc.forEach(function (value) {
+  // console.log(value);
+});
+
+// practice
+const fil = [1, 5, 4, 13, 14, 6];
+const oddNumber = fil.filter((x) => {
+  return x % 2==0;
+});
+
+console.log(oddNumber);
